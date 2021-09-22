@@ -1,24 +1,9 @@
-1. list of online users.
-    key
-        mt5:users_online
-    example
-        {[
-            { "login": 123123, "group": "demo", "ip": "127.0.0.1"},
-            { "login": 123124, "group": "demo", "ip": "127.0.0.1"}
-        ]}
+# symbols
+```
+{"symbols":[{"symbol":"AUDCAD","description":"Australian Dollar vs Canadian Dollar","type":3,"digits":5,"trade":2,"contract_size":100000.00},{"symbol":"AUDCHF","description":"Australian Dollar vs Swiss Franc","type":3,"digits":5,"trade":2,"contract_size":100000.00}]}
+```
+# groups
 
-2. positions per user for online users
-    key
-        mt5:positions:<login>
-    example
-        {[
-            {"ticket": 1313, "volume": 0.1, "price_open": 1.12121, "sl":1.2323, "tp": 1.111, "time_open": "2000.02.02 23:22"},
-            {"ticket": 1314, "volume": 0.1, "price_open": 1.12121, "sl":1.2323, "tp": 1.111, "time_open": "2000.02.02 23:21"}
-        ]}
-
-3. user margin/equity/profit info for online users
-    key
-        mt5:info:<login>
-    example
-        {"profit": 12, "equity": 333333, "margin": 1211.12, "margin_free": 121.11}
-    
+```
+{"groups":[{"group":"manager","secs":[{"show":1,"trade":1, "execution":0, "comm_base":0.00, "comm_type":0,"comm_lots":0, "comm_agent":0.00,"comm_agent_type":0,"spread_diff":0,"lot_min":1,"lot_max":5000,"lots_step":1},{"show":1,"trade":1, "execution":0, "comm_base":0.00, "comm_type":0,"comm_lots":0, "comm_agent":0.00,"comm_agent_type":0,"spread_diff":0,"lot_min":1,"lot_max":3000,"lots_step":1}]}
+```
